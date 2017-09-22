@@ -4,8 +4,8 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
-using Amazon;
-using Amazon.Util;
+//using Amazon;
+//using Amazon.Util;
 
 namespace Fitness.iOS
 {
@@ -18,11 +18,11 @@ namespace Fitness.iOS
             LoadApplication(new App());
 
 
-			var loggingConfig = AWSConfigs.LoggingConfig;
-			loggingConfig.LogMetrics = true;
-			loggingConfig.LogResponses = ResponseLoggingOption.Always;
-			loggingConfig.LogMetricsFormat = LogMetricsFormatOption.JSON;
-			loggingConfig.LogTo = LoggingOptions.SystemDiagnostics;
+			//var loggingConfig = AWSConfigs.LoggingConfig;
+			//loggingConfig.LogMetrics = true;
+			//loggingConfig.LogResponses = ResponseLoggingOption.Always;
+			//loggingConfig.LogMetricsFormat = LogMetricsFormatOption.JSON;
+			//loggingConfig.LogTo = LoggingOptions.SystemDiagnostics;
 
             return base.FinishedLaunching(app, options);
         }

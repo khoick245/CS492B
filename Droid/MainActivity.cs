@@ -7,8 +7,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Amazon;
-using Amazon.Util;
+//using Amazon;
+//using Amazon.Util;
 
 namespace Fitness.Droid
 {
@@ -25,11 +25,11 @@ namespace Fitness.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-			var loggingConfig = AWSConfigs.LoggingConfig;
-			loggingConfig.LogMetrics = true;
-			loggingConfig.LogResponses = ResponseLoggingOption.Always;
-			loggingConfig.LogMetricsFormat = LogMetricsFormatOption.JSON;
-			loggingConfig.LogTo = LoggingOptions.SystemDiagnostics;
+			//var loggingConfig = AWSConfigs.LoggingConfig;
+			//loggingConfig.LogMetrics = true;
+			//loggingConfig.LogResponses = ResponseLoggingOption.Always;
+			//loggingConfig.LogMetricsFormat = LogMetricsFormatOption.JSON;
+			//loggingConfig.LogTo = LoggingOptions.SystemDiagnostics;
 
             LoadApplication(new App());
         }
